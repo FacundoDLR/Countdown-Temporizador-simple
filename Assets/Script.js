@@ -23,7 +23,7 @@ const countdown = (deadline, elem, finalMessage) => {
 
     const timerUpdate = setInterval( () => {
         let time = getRamainTime(deadline);
-        element.innerHTML = `Dias: ${reamainDays} Hs: ${reamainHours} Min: ${reamainMinutes} Seg: ${reamainSeconds}`;
+        element.innerHTML = `${reamainDays} Dias ${reamainHours} Hs ${reamainMinutes} Min ${reamainSeconds} Seg`;
 
         if (time.remainTime <= 1) {
             clearInterval(timerUpdate);
@@ -32,4 +32,4 @@ const countdown = (deadline, elem, finalMessage) => {
     }, 1000)
 };
 
-countdown("Oct 01 2022 12:41:00", "clock", "Feliz cumpleaños!!! 🥳🎈🎉🎂");
+countdown("Nov 09 2022 00:00:00", "clock", "⌛ Contador Finalizado ⌛");
